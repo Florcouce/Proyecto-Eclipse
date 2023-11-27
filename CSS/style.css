@@ -1,0 +1,126 @@
+h1{
+    color:blueviolet;
+    font-style:inherit;
+    font-family: 'Trebuchet MS';
+}
+
+
+body{
+    background-color: rgb(44, 43, 43);
+}
+
+.titulo-lista{
+    font-family: 'Trebuchet MS';
+    font-size: medium;
+}
+
+.texto-comun{
+    font-family: 'Trebuchet MS';
+}
+
+header{
+    padding: 10px;
+    border-bottom: 1px solid rgb(255, 255, 255); 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "img nav plataforma";
+}
+
+header nav ul{
+    display: flex;
+
+}
+
+header nav ul li a{
+    color: pink;
+    list-style-type: none;
+    margin: 10px;
+    text-decoration: none;
+}
+
+header img{
+    width: 10rem;
+    grid-area: img;
+}
+
+header nav{
+grid-area: nav;
+justify-content: center;
+display: flex;
+align-items: center;
+
+}
+
+header div{
+    grid-area: plataforma;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px; 
+ }
+
+header div img{
+    width: 25px;
+}
+
+header div a{   
+    text-decoration: none;
+    color: pink;
+    text-decoration: none;
+}
+
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+}
+
+footer nav ul li h2{
+    color: pink;
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    grid-template-areas: 
+    "envios redes pago";
+}
+
+.texto-comun{
+color: white;
+font-size:small;
+justify-content: center;
+}
+
+.titulo-lista1{
+    grid-area: envios;
+    color: pink;
+    font-family: 'Trebuchet MS'; 
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-lista2{
+    grid-area: redes;
+    color: pink;
+    font-family: 'Trebuchet MS'; 
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-lista3{
+    grid-area: redes;
+    color: pink;
+    font-family: 'Trebuchet MS'; 
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul li{
+    display: flex;
+}
