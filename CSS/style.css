@@ -1,3 +1,8 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 h1{
     color:blueviolet;
     font-style:inherit;
@@ -20,6 +25,7 @@ body{
 
 header{
     padding: 10px;
+    padding-bottom: 20px;
     border-bottom: 1px solid rgb(255, 255, 255); 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -29,7 +35,10 @@ header{
 
 header nav ul{
     display: flex;
-
+    list-style-type: none;
+    grid-area: nav;
+    justify-content: center;
+    align-items: center;
 }
 
 header nav ul li a{
@@ -37,20 +46,15 @@ header nav ul li a{
     list-style-type: none;
     margin: 10px;
     text-decoration: none;
+    font-family: Trebuchet MS;
 }
 
 header img{
     width: 10rem;
     grid-area: img;
+    border-radius: 15px;
 }
 
-header nav{
-grid-area: nav;
-justify-content: center;
-display: flex;
-align-items: center;
-
-}
 
 header div{
     grid-area: plataforma;
@@ -58,10 +62,11 @@ header div{
     align-items: center;
     justify-content: center;
     margin-left: 15px; 
+    font-family: Trebuchet MS;
  }
 
 header div img{
-    width: 25px;
+    width: 26px;
 }
 
 header div a{   
@@ -75,52 +80,34 @@ footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     list-style-type: none;
+    border-top: 1px solid white;
+    padding: 20px;
 }
 
-footer nav ul li h2{
+footer h2{
     color: pink;
     font-size: medium;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     grid-template-areas: 
     "envios redes pago";
+    display: flex;
 }
 
-.texto-comun{
+footer nav{
 color: white;
 font-size:small;
-justify-content: center;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
-.titulo-lista1{
-    grid-area: envios;
-    color: pink;
-    font-family: 'Trebuchet MS'; 
-    font-size: medium;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+header nav ul li a:hover{
+    background-color: pink;
+    color:black;
 }
 
-.titulo-lista2{
-    grid-area: redes;
-    color: pink;
-    font-family: 'Trebuchet MS'; 
-    font-size: medium;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+footer nav li:hover{
+    background-color: pink;
+    color:black;
 }
 
-.titulo-lista3{
-    grid-area: redes;
-    color: pink;
-    font-family: 'Trebuchet MS'; 
-    font-size: medium;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-footer ul li{
-    display: flex;
-}
