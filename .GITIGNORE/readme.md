@@ -1,0 +1,1 @@
+Este proyecto fue el utilizado en "Entrega 1". Tuve problemas con git y con guardar cambios hechos. No se si sera porque instale git despues de hacer muchas modificaciones en lugar de tenerlo instalado y hacer un proyecto nuevo. 

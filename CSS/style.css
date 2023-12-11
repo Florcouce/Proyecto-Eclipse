@@ -39,6 +39,7 @@ header nav ul{
     grid-area: nav;
     justify-content: center;
     align-items: center;
+    
 }
 
 header nav ul li a{
